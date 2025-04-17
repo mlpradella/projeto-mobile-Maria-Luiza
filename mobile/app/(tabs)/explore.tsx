@@ -58,42 +58,71 @@ export default function TabTwoScreen() {
       </Collapsible>
       <Collapsible title="Faturas pagas">
         <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
+          fatura paga<br></br>189,08<br></br><ThemedText type="defaultSemiBold">VER MAIS</ThemedText> 
         </ThemedText>
-        <Image source={require('@/assets/images/m.jpg')} style={{ alignSelf: 'center' }} />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Custom fonts">
         <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
-          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
-          </ThemedText>
+          fatura atrasada<br></br>69,97<br></br><ThemedText type="defaultSemiBold">VER MAIS</ThemedText> 
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
+
       </Collapsible>
-      <Collapsible title="Light and dark mode components">
+      <Collapsible title="Boletos">
         <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
+          Pagamento em aberto<br></br><ThemedText type="defaultSemiBold">Mais informações</ThemedText>{' '}
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
+        <Button color={'black'}
+                  onPress={() => {
+                    console.log('You tapped the button!');
+                  }}
+                  title="QR code"
+                />
+                <ThemedText>
+          Pagamento em aberto<br></br><ThemedText type="defaultSemiBold">Mais informações</ThemedText>{' '}
+        </ThemedText>
+        <Button color={'black'}
+                  onPress={() => {
+                    console.log('You tapped the button!');
+                  }}
+                  title="QR code"
+                />
       </Collapsible>
-      <Collapsible title="Animations">
+      <Collapsible title="Senhas">
         <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText>{' '}
-          library to create a waving hand animation.
+          Senha do cartão físico{' '}<br></br>*********
+        </ThemedText>
+        <Button color={'black'}
+                  onPress={() => {
+                    console.log('You tapped the button!');
+                  }}
+                  title="VER SENHA"
+                />
+<ThemedText>
+          Senha do banco{' '}<br></br>*********
+        </ThemedText>
+        <Button color={'black'}
+                  onPress={() => {
+                    console.log('You tapped the button!');
+                  }}
+                  title="VER SENHA"
+                />
+
+      </Collapsible>
+      <Collapsible title="Caixinha">
+        <ThemedText>
+          <ThemedText type="defaultSemiBold">Meu dinheiro</ThemedText><br></br>Minha casa<br></br>8.956,04<br></br>
+          <Button color={'black'}
+                  onPress={() => {
+                    console.log('You tapped the button!');
+                  }}
+                  title="Transferir"
+                /><br></br>
+                
+          <Button color={'black'}
+                  onPress={() => {
+                    console.log('You tapped the button!');
+                  }}
+                  title="Resgatar"
+                />
+
         </ThemedText>
         {Platform.select({
           ios: (

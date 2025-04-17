@@ -44,7 +44,7 @@ export default function HomeScreen() {
         <ThemedText>
           R$284,08
         </ThemedText>
-
+      
         <Button color={'black'}
   onPress={() => {
     console.log('You tapped the button!');
